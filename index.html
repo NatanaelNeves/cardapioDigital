@@ -32,8 +32,8 @@
 
              
             <!-- cartao horizontal produto hamburguer -->
-            <div class="card" style="width: 18rem;">
-               <h2 class="card-title text-black-50 card fs-5">Clássico Angus Burger</h2>
+            <div class="card my-3 bg-warning" style="width: 18rem;">
+               <h2 class="card-title bg-dark card fs-5">Clássico Angus Burger</h2>
                <img class="img-fluid rounded-start" src="imagens/burger01.png" alt="Imagem do primeiro hamburguer">
                
                <div class="card-body">
@@ -50,13 +50,48 @@
              </div>
              
             <!-- cartao horizontal produto acompanhamento -->
+            <div class="card my-3 bg-warning" style="width: 18rem;">
+               <h2 class="card-title bg-dark card fs-5">Batata</h2>
+               <img class="img-fluid rounded-start" src="imagens/acomp01.png" alt="Imagem do primeiro hamburguer">
+               
+               <div class="card-body">
+                 <h6 class="card-text text-dark font-weight-bold">Total:15,00 R$</h6>
+               </div>
+         
+               </ul>
+               <div class="d-flex my-3">
+                <button class="btn-danger btn-sm mx-1">-</button>
+                <input type="number" value="1" class="w-75 mx-3 text-dark text-center" >
+                <button class="btn-success btn-sm mx-1">+</button>
+                 
+               </div>
+             </div>
 
             <!-- cartao horitzontal produto bebida -->
+            <div class="card my-3 bg-warning" style="width: 18rem;">
+               <h2 class="card-title bg-dark fs-5">Coca-cola</h2>
+               <img class="img-fluid rounded-start" src="imagens/bebida01.png" alt="Imagem do primeiro hamburguer">
+               
+               <div class="card-body">
+                 <h6 class="card-text text-dark font-weight-bold">Total:05,00 R$</h6>
+               </div>
+         
+               </ul>
+               <div class="d-flex my-3">
+                <button class="btn-danger btn-sm mx-1">-</button>
+                <input type="number" value="1" class="w-75 mx-3 text-dark text-center" >
+                <button class="btn-success btn-sm mx-1">+</button>
+                 
+               </div>
+             </div>
 
-
-            <!-- total carrinho -->
-
-            <!-- botao pagar -->
+             <div>
+             <!-- total carrinho -->
+               <h3 class="text-center">Total a pagar: R$ 150,00 </h3>
+               <!-- botao pagar -->
+               <button class="btn btn-warning text-dark">PAGAR</button>
+            
+            </div>
 
 
          </div>
@@ -64,7 +99,31 @@
         </div>
       </div>
     </div>
-  
+      <section id="publicidade" class="container w-75">
+
+         <div id="carouselPublicidade" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagens/carne-hamburguer-tomate-pepino-ovo-salada-de-repolho-alface-queijo-azeitonas-vista-lateral_141793-1801.jpg" class="d-block w-75 " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/cheeseburguer-gourmet-grelhado-em-mesa-de-madeira-rustica-gerada-por-ia_24640-82475.jpg" class="d-block w-75" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/hamburguer-de-carne-grande-porcao-com-batatas-fritas-e-molho-em-um-cafe_114579-1891.jpg" class="d-block w-75" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+      </section>
     <main>
         <h1>cardápio</h1>
 
@@ -81,9 +140,32 @@
                     <h3>Clássico Angus Burger - <strong>R$22,50</strong>  </h3>
                     <p>Delicie-se com o nosso Hambúrguer Clássico, feito com um suculento hambúrguer de carne angus, queijo derretido, alface crocante, tomate fresco e um toque especial do nosso molho secreto. Perfeito para saciar sua fome!</p>
                     <button>PEDIR</button>
+                    <button  data-toggle="modal" data-target="#modalExemplo">VER DETALHES</button>
+    
                  </div>
 
             </div>
+            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                       <span aria-hidden="true">&times;</span>
+                     </button>
+                   </div>
+                   <div class="modal-body">
+                     ...
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                     <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+            
 
             <div class="boxProduto">
 
